@@ -1,0 +1,186 @@
+/* ========================================
+   RESET & BASE
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   NAVBAR SUPER MEWAH
+=========================================*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
+  border-bottom: 1px solid rgba(255, 180, 0, 0.4);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffdd55;
+  text-shadow: 0 0 15px rgba(255, 180, 0, 0.8);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.25s ease-in-out;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.menu li a:hover {
+  background: linear-gradient(45deg, #ff3b00, #ff9500, #ffdd00);
+  box-shadow: 0 0 15px rgba(255, 170, 0, 0.8);
+  transform: translateY(-4px);
+}
+
+/* ========================================
+   HERO SECTION PREMIUM RESPONSIVE
+=========================================*/
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.9)),
+              url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe')
+              center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 20px 60px;
+  text-align: center;
+}
+
+/* WRAPPER SUPAYA GAP STABIL */
+.hero-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+/* ========== TITLE ========== */
+.hero-content h1 {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1.15;
+
+  color: #ffffff;
+  text-shadow:
+    0 0 10px rgba(255, 180, 0, 0.45),
+    0 0 18px rgba(255, 140, 0, 0.25); /* lebih halus, tdk terlalu tebal */
+}
+
+.hero-content h1 span {
+  background: linear-gradient(90deg, #ff5200, #ffa000, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 8px rgba(255, 150, 0, 0.4),
+    0 0 14px rgba(255, 120, 0, 0.3); /* tidak over-shadow */
+}
+
+/* ========== SUBTITLE ========== */
+.hero-content p {
+  font-size: 23px;
+  color: #ffeec8;
+  opacity: 0.9;
+
+  text-shadow:
+    0 0 8px rgba(255, 200, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+/* ========== CTA BUTTON ========== */
+.cta {
+  margin-top: 20px;
+  padding: 18px 45px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d2d2d;
+  text-decoration: none;
+
+  border-radius: 60px;
+  background: linear-gradient(90deg, #ff3b00, #ff7800, #ffd200);
+
+  box-shadow: 0 6px 22px rgba(255, 170, 0, 0.5);
+  transition: 0.35s ease;
+}
+
+.cta:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 200, 0, 0.65);
+}
+
+/* ========================================
+   RESPONSIVE SCREEN
+=========================================*/
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  .hero-content p {
+    font-size: 20px;
+  }
+  .cta {
+    font-size: 20px;
+    padding: 16px 38px;
+  }
+}
+
+/* HP */
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-content {
+    gap: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta {
+    font-size: 18px;
+    padding: 14px 34px;
+    border-radius: 45px;
+  }
+}

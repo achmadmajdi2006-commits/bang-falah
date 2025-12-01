@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Nasgor Bang Falah</title>
+
+  <style>
+    /* TOMBOL KEMBALI */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #ff8800;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      z-index: 999;
+      transition: .3s;
+    }
+    .back-btn:hover {
+      background: #e06f00;
+      transform: scale(1.05);
+    }
+
+    .sub-header {
+      font-size: 32px;
+      text-align: center;
+      padding: 25px 0;
+      background: #ffb703;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .food-gallery {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .food-gallery h2 {
+      font-size: 34px;
+      margin-bottom: 25px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .food-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      justify-items: center;
+      padding-bottom: 40px;
+    }
+
+    .food-card {
+      width: 230px;
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: 0.3s;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .food-card h3 {
+      margin: 12px 0 5px 0;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .food-card p {
+      margin: 0 0 12px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #e63946;
+    }
+
+    .food-card:hover {
+      transform: scale(1.06);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- TOMBOL KEMBALI -->
+  <a class="back-btn" href="index.html">← Kembali</a>
+
+  <header class="sub-header">Menu Nasgor Bang Falah</header>
+
+  <section class="food-gallery">
+    <h2>Menu Favorit Kami</h2>
+
+    <div class="food-container">
+
+      <!-- ================== 15 MAKANAN ================== -->
+      <div class="food-card"><img src="foto/jakarta.jpg"><h3>Nasgor Jakarta</h3><p>Rp 10.000</p></div>
+      <div class="food-card"><img src="foto/singapure.jpg"><h3>Nasgor Singapore</h3><p>Rp 15.000</p></div>
+      <div class="food-card"><img src="foto/gila.png"><h3>Nasgor Gila</h3><p>Rp 15.000</p></div>
+      <div class="food-card"><img src="foto/geprek.webp"><h3>Nasgor Geprek</h3><p>Rp 18.000</p></div>
+      <div class="food-card"><img src="foto/tt.jpeg"><h3>Nasi Tumis Telur</h3><p>Rp 12.000</p></div>
+      <div class="food-card"><img src="foto/brutal.jpeg"><h3>Nasgor Brutal</h3><p>Rp 17.000</p></div>
+      <div class="food-card"><img src="foto/babat.webp"><h3>Nasgor Babat</h3><p>Rp 15.000</p></div>
+      <div class="food-card"><img src="foto/istimewa.webp"><h3>Nasgor Istimewa</h3><p>Rp 17.000</p></div>
+      <div class="food-card"><img src="foto/kambing.jpg"><h3>Nasgor Kambing</h3><p>Rp 15.000</p></div>
+      <div class="food-card"><img src="foto/mawod.jpeg"><h3>Nasgor Mawod</h3><p>Rp 13.000</p></div>
+      <div class="food-card"><img src="foto/merah.jpeg"><h3>Nasgor Merah</h3><p>Rp 10.000</p></div>
+      <div class="food-card"><img src="foto/mie.jpeg"><h3>Mie Goreng</h3><p>Rp 15.000</p></div>
+      <div class="food-card"><img src="foto/m.ayam.jpg"><h3>Nasgor Merah Ayam</h3><p>Rp 13.000</p></div>
+      <div class="food-card"><img src="foto/n.gila.jpeg"><h3>Nasi Gila</h3><p>Rp 15.000</p></div>
+      <div class="food-card"><img src="foto/kw.jpeg"><h3>Kwetiau</h3><p>Rp 17.000</p></div>
+
+      <!-- ================== 5 MINUMAN ================== -->
+      <div class="food-card"><img src="foto/esteh.jpg"><h3>Es Teh Manis</h3><p>Rp 5.000</p></div>
+      <div class="food-card"><img src="foto/jeruk.jpeg"><h3>Es Jeruk Segar</h3><p>Rp 7.000</p></div>
+      <div class="food-card"><img src="foto/sirup.jpeg"><h3>Es Sirup</h3><p>Rp 6.000</p></div>
+      <div class="food-card"><img src="foto/eswaras.webp"><h3>Es Waras</h3><p>Rp 6.000</p></div>
+      <div class="food-card"><img src="foto/JOSHUA.jpeg"><h3>Joshua</h3><p>Rp 8.000</p></div>
+
+    </div>
+  </section>
+
+</body>
+</html>
